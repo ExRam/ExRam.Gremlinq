@@ -35,7 +35,7 @@ namespace ExRam.Gremlinq.Providers.CosmosDb.Tests
             _g = fixture.GremlinQuerySource.Result;
         }
 
-        [Fact(Skip = "CosmosDb often seems to close the connection right after an Authenticate status.")]
+        [Fact]
         public async Task No_password_bubbles_up()
         {
             await _g
